@@ -10,21 +10,15 @@ namespace EmployeeWageComputation
 {
     public class MonthlyWages
     {
-       
-        
-
         public static void WagesOFMonth()
         {
-        
-            int Emp_Rate_Per_Hour = 20;
+           int Emp_Rate_Per_Hour = 20;
             int Is_Full_Time = 1;
             int Is_Part_Time = 2;
             int WORKING_DAYS = 20;
-
-
-        int EmpHrs = 0, EmpWage = 0 , Total_Hrs = 0, TotalEmpWages = 0;
+           int EmpHrs = 0, EmpWage = 0 , Total_Hrs = 0, TotalEmpWages = 0;
             
-            for (int Day = 1; Day <= WORKING_DAYS; Day++)
+           for (int Day = 1; Day <= WORKING_DAYS; Day++)
             {
                 Random random = new Random();
                 int EmpCheck = (random.Next(3));
@@ -40,7 +34,6 @@ namespace EmployeeWageComputation
                 }
                 else
                 {
-
                     EmpHrs = 0;
                 }
                 EmpWage += Emp_Rate_Per_Hour * EmpHrs;
@@ -48,8 +41,6 @@ namespace EmployeeWageComputation
                 //Console.WriteLine(" Employee  Wage :" + EmpWage);
             }
             Console.WriteLine(" Employee Total Wage :" + TotalEmpWages);
-           
-            
-        }
+         }
     }
 }
